@@ -1,0 +1,9 @@
+.sidebar {
+  grid-area: sidebar;
+}
+.sidebar__item {
+  margin-bottom: 10px;
+}
+.active {
+  color: rgb(113, 133, 221);
+}

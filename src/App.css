@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(189, 189, 189);
+  font-size: 16px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: grid;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 20px;
+  height: 100vh;
+}
+.main {
+  grid-area: main;
+}

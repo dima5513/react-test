@@ -1,0 +1,39 @@
+.dialogs{
+    height: 100%;
+}
+.dialogs__body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100%;
+    grid-gap: 10px;
+}
+.dialogs__list{
+    background-color: #548cc4;
+    padding: 10px;
+}
+.messages{
+    background-color: #8259c9;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 40px ;
+}
+.dialog__item{
+    margin-bottom: 10px;
+}
+.messageItem{
+    margin-bottom: 10px;
+    color: #e1cbd0;
+    padding: 5px 10px;
+    border: 1px solid #d0cbcb;
+    border-radius: 10px ;
+}
+.messageForm{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+.messageForm__input{
+    padding: 5px;
+}
+.messageForm__btn{
+    padding: 5px;
+}
