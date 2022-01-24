@@ -16,25 +16,9 @@ const App = (props) => {
         <Sidebar />
         <main className="main">
           <Routes>
-            <Route
-              path={"/"}
-              element={
-                <Profile
-                  store={props.store.profilePage}
-                  dispatch={props.dispatch}
-                />
-              }
-            />
-            <Route
-              path={"/profile"}
-              element={
-                <Profile
-                  store={props.store.profilePage}
-                  dispatch={props.dispatch}
-                />
-              }
-            />
-            <Route path={"/dialogs/*"} element={<DialogsContainer store={props.store.dialogsPage} dispatch={props.dispatch}/>} />
+            <Route path={"/"} element={<Profile />} />
+            <Route path={"/profile"} element={<Profile />} />
+            <Route path={"/dialogs/*"} element={<DialogsContainer />} />
           </Routes>
         </main>
         <Footer />

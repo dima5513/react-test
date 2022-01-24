@@ -5,10 +5,9 @@ import MyPostsContainer from "./MyPostsContainer";
 const Profile = (props) => {
   return (
     <div className={classes.profile}>
-
-       <MyPostsContainer store={props.store}  dispatch={props.dispatch}/>
-
+      <MyPostsContainer />
     </div>
   );
 };
+
 export default Profile;
