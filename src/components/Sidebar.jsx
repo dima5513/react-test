@@ -33,6 +33,11 @@ const Sidebar = (props) => {
             Настройки
           </NavLink>
         </li>
+        <li className={classes.sidebar__item}>
+          <NavLink className={activeClass} to={"/users"}>
+            Пользователи
+          </NavLink>
+        </li>
       </ul>
     </aside>
   );
