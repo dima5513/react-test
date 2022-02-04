@@ -1,26 +1,29 @@
 import React from "react";
-import Header from "./components/Header";
+import HeaderContainer from "./components/HeaderContainer";
 import Footer from "./components/Footer";
-
-import Profile from "./components/Profile";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import DialogsContainer from "./components/DialogsContainer";
 import UsersContainer from "./components/UsersContainer";
+import ProfileContainer from "./components/ProfileContainer";
+import Login from "./components/Login";
+import { Navigate } from 'react-router-dom'
+import "./App.css";
+
 
 const App = (props) => {
   return (
     <BrowserRouter>
       <div className="wrapper">
-        <Header />
+        <HeaderContainer />
         <Sidebar />
         <main className="main">
           <Routes>
-            <Route path={"/"} element={<Profile />} />
-            <Route path={"/profile"} element={<Profile />} />
+            <Route path={'/'} element={<Navigate to={'/profile'}/>}/>
+            <Route path={"/profile/*"} element={<ProfileContainer />} />
             <Route path={"/dialogs/*"} element={<DialogsContainer />} />
             <Route path={"/users"} element={<UsersContainer />} />
+            <Route path={"/login"} element={<Login/>} />
           </Routes>
         </main>
         <Footer />

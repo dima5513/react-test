@@ -1,0 +1,22 @@
+.profileInfo {
+  background-color: rgb(117, 144, 151);
+  margin-bottom: 30px;
+  padding: 10px 10px 50px 10px;
+  border-radius: 10px;
+  display: flex;
+  color: #fff;
+  position: relative;
+}
+
+.profilePhoto {
+  width: 200px;
+}
+.profileInfo__name {
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+.profileInfo__aboutme {
+  margin-left: 30px;
+}

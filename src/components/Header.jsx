@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import classes from "../styles/Header.module.css";
 const Header = (props) => {
   return (
@@ -8,6 +9,10 @@ const Header = (props) => {
         src="https://cdn-icons-png.flaticon.com/512/152/152754.png"
         alt=""
       />
+      <div className={classes.loginBlock}>
+        <NavLink to={"/login"}>Login</NavLink>
+      </div>
+      <div className={classes.myLogin}>{props.login}</div>
     </header>
   );
 };

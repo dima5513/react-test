@@ -3,8 +3,16 @@
   background-color: rgb(148, 190, 238);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 15px;
 }
 .header__logo {
   width: 40px;
+}
+.loginBlock {
+  color: #fff;
+  transition: color 0.2s;
+}
+.loginBlock:hover {
+  color: cornflowerblue;
 }
